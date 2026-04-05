@@ -3,7 +3,7 @@
 
 Built with passion by **Naman Pahariya**, this project is an Arduino-powered smart ignition system that completely replaces traditional keys with secure RFID technology. 
 
-This innovation was selected for the prestigious **INSPIRE Award of ₹10,000** by the **Department of Science & Technology (DST), Govt. of India**, and represented **St. Josephs Sr. Sec. School (Auraiya)** at the District Level Exhibition.
+This innovation was selected for the prestigious **INSPIRE Award of ₹10,000** by the **Department of Science & Technology (DST), Govt. of India**, and was featured at the District Level Exhibition.
 
 ---
 
@@ -52,8 +52,6 @@ Traditional keys are easy to lose and mechanical ignitions can be bypassed. This
 
 ## 👨‍💻 Developed By
 **Naman Pahariya**  
-*Student of Class 9th*  
-*St. Josephs Sr. Sec. School, Auraiya, Uttar Pradesh*
 
 ---
 > "Innovating today for a smarter tomorrow." 🌟
