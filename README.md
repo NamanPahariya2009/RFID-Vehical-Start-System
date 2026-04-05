@@ -1,11 +1,11 @@
-# RFID Bike Start System
+# RFID Vehical Start System
 
-An Arduino-based RFID starter system that uses an MFRC522 RFID module to control a high-current motor (like a bike starter or ignition) via a relay module. 
+An Arduino-based RFID starter system that uses an MFRC522 RFID module to control a high-current motor (like a vehical starter or ignition) via a relay module. 
 
-The system provides a reliable, keyless way to start or lock your bike using cards or keyfobs.
+The system provides a reliable, keyless way to start or lock your vehical using cards or keyfobs.
 
 ## Features
-- **Keyless Ignition:** Start or stop your bike with a simple swipe of an RFID tag.
+- **Keyless Ignition:** Start or stop your vehical with a simple swipe of an RFID tag.
 - **Relay-Isolated Power:** Securely handles high-current loads without direct contact with the microcontroller.
 - **Secure Tag Comparison:** Hardcoded UID system for maximum security.
 
