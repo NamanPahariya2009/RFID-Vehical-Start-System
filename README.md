@@ -1,57 +1,58 @@
-# 🏆 RFID Vehical Start System
-### *Winner of the INSPIRE Award - MANAK (2023-24)*
+# 🏆 RFID Vehicle Start System
+### [cite_start]*Official Winner of the INSPIRE Award - MANAK (2023-24)* [cite: 22, 30]
 
-Built with passion by **Naman Pahariya**, this project is an Arduino-powered smart ignition system that completely replaces traditional keys with secure RFID technology. 
-
-This innovation was selected for the prestigious **INSPIRE Award of ₹10,000** by the **Department of Science & Technology (DST), Govt. of India**, and was featured at the District Level Exhibition.
+[cite_start]Developed by **Naman Pahariya**[cite: 28], this project is an Arduino-based smart ignition security system designed to replace traditional mechanical keys with encrypted **Radio Frequency Identification (RFID)** verification. [cite_start]This innovation was selected by the **Department of Science & Technology (DST), Govt. of India** [cite: 19, 33][cite_start], for a **₹10,000 grant** [cite: 30] [cite_start]and recognized for the District Level Exhibition[cite: 30].
 
 ---
 
 ## 🎖 Recognition & Awards
-- **INSPIRE Award - MANAK (2023-24)**: Recognized for preparation of a Science project/model for District Level Exhibition & Project Competitions (DLEPCs).
-- **Grant Awarded**: ₹10,000 by the National Innovation Foundation - India.
+* [cite_start]**Award Program**: INSPIRE Awards - MANAK (Million Minds Augmenting National Aspiration and Knowledge)[cite: 22, 23].
+* [cite_start]**Grant Awarded**: ₹10,000 by the National Innovation Foundation - India[cite: 19, 30].
+* [cite_start]**Official Reference No.**: 23UP4704713[cite: 26].
+* **Institution**: St. Joseph's Sr. Sec. [cite_start]School, Auraiya[cite: 29].
 
 ---
 
-## 💡 The Idea
-Traditional keys are easy to lose and mechanical ignitions can be bypassed. This project solves that by using **Radio Frequency Identification (RFID)** to verify the owner's identity before starting the vehical's motor. It’s secure, fast, and feels like the future!
+## 💡 Project Overview
+Mechanical ignitions are vulnerable to physical bypassing and key loss. This project introduces a secure **Keyless Ignition** layer that verifies a user's unique 13.56MHz tag ID before allowing the engine (simulated by a DC motor) to draw power.
 
-## 🚀 Features
-- **⚡ Keyless Ignition**: Start or stop your vehical with a simple swipe of an RFID tag or card.
-- **🛡️ Secure Access**: Only authorized UID tags (stored in the firmware) can activate the system.
-- **🔌 High-Current Handling**: A relay-isolated circuit ensures the high-power starter motor doesn't damage the microcontroller.
-- **🔋 Dual Power Support**: Runs on a 18650 Li-ion battery pack for consistent performance.
-
-## 🛠️ Hardware Requirements
-- **Arduino Uno** (The Brain)
-- **MFRC522 RFID Reader**
-- **5V Relay Module** (The Switch)
-- **DC Motor** (Simulating the Starter)
-- **7.4V Li-ion Battery Pack**
-- **RFID Tags/Cards** (MIFARE Classic)
-
-## 📡 Wiring Guide
-
-| RFID Pin | Arduino Pin | | Relay Pin | Arduino Pin |
-| :------- | :---------- | - | :-------- | :---------- |
-| **VCC**  | 3.3V        | | **VCC**   | 5V          |
-| **RST**  | Pin 9       | | **GND**   | GND         |
-| **GND**  | GND         | | **IN**    | Pin 7       |
-| **MISO** | Pin 12      | |           |             |
-| **MOSI** | Pin 11      | |           |             |
-| **SCK**  | Pin 13      | |           |             |
-| **SDA**  | Pin 10      | |           |             |
+## 🚀 Key Features
+* **⚡ Keyless Ignition**: Start or stop your vehicle with a simple swipe of an authorized RFID tag.
+* [cite_start]**🛡️ Secure Access**: Only pre-authorized UID tags stored in the firmware can activate the system[cite: 3, 14].
+* [cite_start]**🔌 Isolated Power Circuit**: Uses a 5V Relay to separate the logic circuit (Arduino) from the high-current load (Motor)[cite: 10, 11].
+* **🔋 Portable Power**: Optimized to run on a **7.4V 18650 Li-ion battery pack**.
 
 ---
 
-## 💻 How to Use
-1. **Clone the Repo**: Download this code to your computer.
-2. **Library Setup**: Install the `MFRC522` library in your Arduino IDE.
-3. **Configure UIDs**: Update `ok_rfid_1` and `ok_rfid_2` in `RFID_Vehical_Start_System.ino` with your tag's unique ID.
-4. **Flash it!**: Upload the code and swipe to start your engine.
+## 🛠️ Hardware Stack
+* [cite_start]**Microcontroller**: Arduino Uno[cite: 1].
+* [cite_start]**Sensor**: MFRC522 RFID Reader (SPI Interface)[cite: 2, 6].
+* [cite_start]**Actuator**: 5V Single-Channel Relay[cite: 10].
+* **Load**: DC Motor.
+* **Power**: 2x 18650 Li-ion Cells.
 
-## 👨‍💻 Developed By
-**Naman Pahariya**  
+## [cite_start]📡 Wiring Configuration [cite: 1, 3, 4]
+
+| RFID Pin | Arduino Pin | Function | | Relay Pin | Arduino Pin |
+| :--- | :--- | :--- | - | :--- | :--- |
+| **VCC** | 3.3V | Power | | **VCC** | 5V |
+| **RST** | Pin 9 | Reset | | **GND** | GND |
+| **GND** | GND | Ground | | **IN** | Pin 7 |
+| **MISO** | Pin 12 | SPI MISO | | | |
+| **MOSI** | Pin 11 | SPI MOSI | | | |
+| **SCK** | Pin 13 | SPI Clock | | | |
+| **SDA (SS)** | Pin 10 | SPI SS | | | |
 
 ---
-> "Innovating today for a smarter tomorrow." 🌟
+
+## 💻 Software Setup
+1.  [cite_start]**Install Libraries**: Ensure the `MFRC522.h` and `SPI.h` libraries are installed in your Arduino IDE[cite: 1].
+2.  [cite_start]**Tag Configuration**: Update the `ok_rfid` variables in `RFID_Vehicle_Start_System.ino` with your specific tag UIDs[cite: 3, 4].
+    ```cpp
+    String ok_rfid_1 = "Your_Card_UID"; 
+    String ok_rfid_2 = "Your_Keyfob_UID";
+    ```
+3.  **Upload**: Flash the code and use the Serial Monitor (9600 baud) for real-time debugging[cite: 4, 5].
+
+## 👨‍💻 Developer
+**Naman Pahariya** *Innovating secure solutions for a smarter tomorrow.*
