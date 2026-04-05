@@ -65,3 +65,8 @@ Traditional ignitions are actually quite easy to bypass, and losing your keys is
 ## 👨‍💻 Developed By
 **Naman Pahariya**
 *Building things that make our future a little bit safer and a lot smarter.* 🚀
+
+---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and share!
